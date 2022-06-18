@@ -54,8 +54,8 @@
 }
 
 .lead__title {
-  line-height: 34px;
-  font-size: 32px;
+  line-height: 32px;
+  font-size: 28px;
   font-weight: 400;
   margin: 0;
   max-height: 200px;
@@ -149,7 +149,7 @@
   cursor: pointer;
 }
 
-.lead__subtitle1:hover {
+.footer__subtitle:hover {
   opacity: 0.5;
 }
 
