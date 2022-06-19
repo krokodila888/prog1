@@ -653,9 +653,14 @@ transition: opacity 0.5s ease-in 0.1s;
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 700px) {
+  .footer-wrap {
+    flex-direction: column;}
+}
+
 .footer__link {
-  line-height: 30px;
-  font-size: 18px;
+  line-height: 36px;
+  font-size: 34px;
   font-weight: 400;
   margin: 0;
   min-width: 220px;
@@ -684,14 +689,14 @@ animation: countdown 2s linear 1 forwards;
 
 @media screen and (max-width: 700px) {
   .footer__link {
-    line-height: 20px;
-    font-size: 16px;}
+    line-height: 32px;
+    font-size: 30px;}
 }
 
 .footer__social-icon {
-  width: 28px;
-  height: 28px;
-  padding-right: 10px;
+  width: 36px;
+  height: 36px;
+  padding-right: 20px;
   align-self: center;
 }
 
