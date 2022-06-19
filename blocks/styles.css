@@ -141,6 +141,11 @@
   padding-left: 50px;
 }
 
+.header__link:hover {
+  opacity: 0.5;
+transition: opacity 0.5s ease-in 0.1s;
+}
+
 @media screen and (max-width: 690px) {
   .header__link {
     line-height: 26px;
@@ -202,10 +207,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-bottom: 30px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .news__intro-container {
     flex-direction: column;}
 }
@@ -252,16 +256,16 @@
 }
 
 .news__image1 {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  margin-bottom: 40px;
-  margin-right: 50px;
+  max-width: 320px;
+  max-height: 320px;
+  object-fit: contain;
+  margin-bottom: 30px;
+  margin-right: 40px;
   float: left;
   margin-top: 8px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   .news__image1 {
     margin-bottom: 20px;
     margin-right: 20px;
@@ -271,11 +275,16 @@
 
 @media screen and (max-width: 500px) {
   .news__image1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-right: 0;
     width: 290px;
     height: 290px;
   }
+}
+
+.news__title-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .news__theme1 {
@@ -283,30 +292,74 @@
   font-weight: 900;
   font-size: 36px;
   margin: 0;
+  padding-bottom: 4px;
+  padding-top: 6px;
+  line-height: 100%;
+  align-self: flex-end;
+}
+
+.news__theme2 {
+  color: #1b1b1b;
+  font-weight: 500;
+  font-size: 26px;
+  margin: 0;
   padding-bottom: 22px;
   padding-top: 6px;
   line-height: 100%;
   align-self: flex-end;
 }
 
+@media screen and (max-width: 760px) {
+  .news__theme2 {
+    align-self: flex-start;
+    padding-top: 6px;
+  }
+}
+
+.news__calendar-icon {
+  width: 28px;
+  height: 28px;
+  padding-right: 10px;
+  align-self: center;
+  object-fit: contain;
+}
+
 .news__date {
   font-weight: 900;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 28px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 40px;
+  min-width: 370px;
+  align-self: flex-end;
   color: #cb3d1d;
+  padding-bottom: 32px;
+  display: flex;
+  align-content: center;
+}
+
+@media screen and (max-width: 760px) {
+  .news__date {
+    align-self: flex-start;}
+}
+
+@media screen and (max-width: 500px) {
+  .news__date {
+    min-width: 70px;
+  }
 }
 
 .news__date1 {
   font-weight: 900;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 26px;
   margin: 0;
   padding-top: 30px;
   min-width: 370px;
   align-self: flex-end;
   color: #cb3d1d;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media screen and (max-width: 760px) {
@@ -322,7 +375,7 @@
   margin: 0;
   background-color: white;
   position: absolute;
-  top: 300px;
+  top: 270px;
   min-width: 320px;
   text-align: center;
   color: #cb3d1d;
@@ -330,13 +383,13 @@
 
 @media screen and (max-width: 500px) {
   .news__date1 {
-    min-width: 70px;;}
+    min-width: 70px;}
 }
 
 @media screen and (max-width: 500px) {
   .news__date2 {
     min-width: 290px;
-    top: 270px;}
+    top: 240px;}
 }
 
 .footer {
@@ -351,49 +404,59 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    padding: 30px 14px 14px 24px;;}
+    padding: 30px 14px 30px 24px;;}
 }
 
 .footer-wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   max-width: 840px;
   padding-left: 10px;
+  list-style: none;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
 .footer__link {
-  line-height: 24px;
+  line-height: 30px;
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-  padding-bottom: 8px;
-  max-height: 72px;
-  max-width: 840px;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
+  min-width: 220px;
 }
 
-.footer__link:hover {
-  opacity: 0.5;
+.footer__link1 {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+  padding-bottom: 20px;
+  transition: transform .9s ease-in-out;
 }
+
+.footer__link:hover .footer__link1 {
+  transform: scale(1.05);
+  overflow: hidden;
+  }
+
+  .footer__link:hover .ooter__link1::after {
+animation: countdown 2s linear 1 forwards;
+}
+
+.footer__link:hover .footer__link1 {opacity: 0.5;}
 
 @media screen and (max-width: 700px) {
   .footer__link {
     line-height: 20px;
-  font-size: 16px;}
+    font-size: 16px;}
 }
 
-/*
-.place__website-link {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-decoration-line: underline;
-  color: #FFFFFF;
+.footer__social-icon {
+  width: 28px;
+  height: 28px;
+  padding-right: 10px;
+  align-self: center;
 }
 
-.place__website-link:hover {
-  opacity: 0.8;
-}
-*/
