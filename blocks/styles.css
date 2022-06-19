@@ -87,8 +87,8 @@
 
 .header__username {
   margin: 0;
-  line-height: 36px;
-  font-size: 30px;
+  line-height: 32px;
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -96,19 +96,19 @@
   .header__username {
     align-self: center;
     line-height: 32px;
-    font-size: 28px;
+    font-size: 26px;
     padding-bottom: 20px;}
 }
 
 @media screen and (max-width: 400px) {
   .header__username {
     line-height: 28px;
-    font-size: 26px;}
+    font-size: 24px;}
 }
 
 .header__subtitle {
-  line-height: 32px;
-  font-size: 28px;
+  line-height: 28px;
+  font-size: 26px;
   font-weight: 400;
   margin: 0;
   max-height: 200px;
@@ -119,19 +119,19 @@
   .header__subtitle {
     align-self: center;
     text-align: center;
-    line-height: 24px;
-    font-size: 20px;}
+    line-height: 22px;
+    font-size: 18px;}
 }
 
 @media screen and (max-width: 625px) {
   .header__subtitle {
-    line-height: 24px;
-    font-size: 20px;}
+    line-height: 22px;
+    font-size: 18px;}
 }
 
 .header__link {
-  line-height: 30px;
-  font-size: 24px;
+  line-height: 26px;
+  font-size: 22px;
   font-weight: 400;
   margin: 0;
   max-height: 72px;
@@ -155,8 +155,8 @@ transition: opacity 0.5s ease-in 0.1s;
 
 @media screen and (max-width: 500px) {
   .header__link {
-    line-height: 22px;
-    font-size: 18px;
+    line-height: 20px;
+    font-size: 16px;
     padding-left: 20px;
     padding-right: 10px;
   }
@@ -325,7 +325,7 @@ transition: opacity 0.5s ease-in 0.1s;
 .news__theme {
   color: #1b1b1b;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0;
   padding-top: 32px;
   line-height: 100%;
@@ -333,19 +333,19 @@ transition: opacity 0.5s ease-in 0.1s;
 
 @media screen and (max-width: 660px) {
   .news__theme {
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 0;}
 }
 
 @media screen and (max-width: 340px) {
   .news__theme {
-    font-size: 24px;}
+    font-size: 22px;}
 }
 
 .news__theme-2 {
   color: #1b1b1b;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0;
   padding-top: 12px;
   line-height: 100%;
@@ -353,13 +353,13 @@ transition: opacity 0.5s ease-in 0.1s;
 
 @media screen and (max-width: 660px) {
   .news__theme-2 {
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 12px;}
 }
 
 @media screen and (max-width: 340px) {
   .news__theme-2 {
-    font-size: 24px;}
+    font-size: 20px;}
 }
 
 .news__info {
@@ -376,7 +376,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .news__paragraph {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 163%;
   margin: 0;
   padding-bottom: 20px;
@@ -388,7 +388,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 @media screen and (max-width: 1023px) {
   .news__paragraph {
-  font-size: 16px;}
+  font-size: 14px;}
 }
 
 .news__image {
@@ -443,7 +443,7 @@ transition: opacity 0.5s ease-in 0.1s;
 .news__theme1 {
   color: #1b1b1b;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0;
   padding-bottom: 4px;
   padding-top: 6px;
@@ -453,7 +453,7 @@ transition: opacity 0.5s ease-in 0.1s;
 .news__theme2 {
   color: #1b1b1b;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 22px;
   margin: 0;
   padding-bottom: 12px;
   padding-top: 6px;
@@ -481,7 +481,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .news__date {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   padding-top: 6px;
   align-self: flex-end;
@@ -504,7 +504,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .news__date0 {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 26px;
   margin: 0;
   padding-top: 30px;
@@ -519,7 +519,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .news__date1 {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   color: #cb3d1d;
   padding-bottom: 40px;
@@ -535,7 +535,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .news__date2 {
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 45px;
   margin: 0;
   background-color: white;
@@ -561,7 +561,7 @@ transition: opacity 0.5s ease-in 0.1s;
 .news__date3 {
   align-self: flex-start;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 26px;
   margin: 0;
   padding-top: 20px;
@@ -605,7 +605,7 @@ transition: opacity 0.5s ease-in 0.1s;
 
 .footer__link {
   line-height: 30px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   min-width: 220px;
